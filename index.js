@@ -50,8 +50,8 @@ function appListen() {
 }
 
 db.connect(database.connectionString, database.databaseName)
-    .catch(utils.tapLog('Error connecting to database!'))
-    .then(utils.tapLog('Successfully connected to database!'))
+    // .catch(utils.tapLog('Error connecting to database!'))
+    // .then(utils.tapLog('Successfully connected to database!'))
     .then(appListen)
-    .then(tapLog(`Server is listening on :${port}`))
+    // .then(tapLog(`Server is listening on :${port}`))
     .catch(error => console.log(`Server error: ${error.message}`));

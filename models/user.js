@@ -6,4 +6,4 @@ const userSchema = new mongoose.Schema({
 });
 
 // Creating the model for establishing communication 
-module.exports = mongoose.Model('user', userSchema)
+module.exports = mongoose.model('user', userSchema)
